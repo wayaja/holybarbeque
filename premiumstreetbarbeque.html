@@ -783,7 +783,7 @@
               </div>
               <div class="address-row">
                 <div class="address-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h4l2 5-3 2c1.5 3 3 4.5 6 6l2-3 5 2v4c0 2-2 4-4 4C9 21 3 15 2 6c0-2 2-4 4-4Z"/></svg></div>
-                <div><strong>Telepon / WhatsApp</strong><a href="https://wa.me/6285220011315" target="_blank" rel="noopener">0852-2001-1315</a></div>
+                <div><strong>Telepon / WhatsApp</strong><a class="js-track-wa" href="https://wa.me/6285220011315" target="_blank" rel="noopener">0852-2001-1315</a></div>
               </div>
             </address>
             <div class="location-actions">
@@ -854,12 +854,6 @@
 
     function trackEvent(name) {
       window.dataLayer.push({ event: name });
-      if (typeof window.gtag === 'function') window.gtag('event', name);
-      if (typeof window.fbq === 'function') {
-        if (name === 'click_google_maps') window.fbq('trackCustom', 'ClickGoogleMaps');
-        if (name === 'click_whatsapp') window.fbq('track', 'Contact');
-        if (name === 'click_view_menu') window.fbq('trackCustom', 'ClickViewMenu');
-      }
     }
 
     document.querySelectorAll('.js-track-maps').forEach(function (link) {
@@ -879,8 +873,6 @@
         if (entry.isIntersecting && !viewContentSent) {
           viewContentSent = true;
           window.dataLayer.push({ event: 'view_content' });
-          if (typeof window.gtag === 'function') window.gtag('event', 'view_content');
-          if (typeof window.fbq === 'function') window.fbq('track', 'ViewContent');
           viewObserver.disconnect();
         }
       });
