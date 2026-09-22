@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#211b18">
+  <meta name="description" content="Paket BBQ dan Steamboat Home Service HolyBarbeque Cirebon. Daging, saus homemade, dan alat masak disiapkan untuk acara di rumah.">
+  <title>HolyBarbeque Home Service Cirebon | BBQ & Steamboat di Rumah</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23211b18'/%3E%3Cpath d='M17 37h30v6H17zm4 8h4v7h-4zm18 0h4v7h-4z' fill='%23f5ead2'/%3E%3Cpath d='M25 33c-5-7 5-9 1-18 9 5 12 11 7 18 7-4 10-10 8-16 9 10 5 18-3 20H25c-7-1-10-7-6-13 1 4 3 7 6 9z' fill='%23e56f33'/%3E%3C/svg%3E">
+
+  <!--
+    GOOGLE TAG MANAGER
+    Tempel snippet GTM resmi tepat setelah tag <head> ini dan snippet noscript
+    tepat setelah tag <body>. Event dataLayer dari halaman sudah disiapkan.
+  -->
+
+  <style>
+    :root {
+      --ink: #211b18;
+      --ink-soft: #3d312b;
+      --cream: #f4e9d3;
+      --cream-light: #fff9ee;
+      --orange: #e56f33;
+      --orange-dark: #bd4b22;
+      --red: #a92e24;
+      --brown: #6b4231;
+      --green: #1c8b4c;
+      --line: rgba(33, 27, 24, .18);
+      --shadow: 0 16px 40px rgba(33, 27, 24, .14);
+      --radius: 22px;
+      --container: 1180px;
+      --bg-paper: none;
+      --bg-charcoal: none;
+      --bg-warm: none;
+      --bg-smoke: none;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background-color: var(--cream);
+      background-image: var(--bg-paper);
+      background-repeat: repeat;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      text-rendering: optimizeLegibility;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background: rgba(244, 233, 211, .82);
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: 3px solid #ffbd3d; outline-offset: 3px; }
+    .container { width: min(calc(100% - 32px), var(--container)); margin-inline: auto; }
+    .section { padding: 48px 0; position: relative; }
+    .section-tight { padding: 36px 0; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 10px;
+      color: var(--orange-dark);
+      font-size: .78rem;
+      font-weight: 850;
+      letter-spacing: .12em;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 24px; height: 3px; border-radius: 99px; background: currentColor; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, .display {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Arial Narrow", sans-serif;
+      font-weight: 800;
+      letter-spacing: .01em;
+      line-height: .98;
+      text-transform: uppercase;
+    }
+    h1 { margin-bottom: 14px; font-size: clamp(2.35rem, 10.5vw, 5.35rem); }
+    h2 { margin-bottom: 14px; font-size: clamp(2rem, 8vw, 4.25rem); }
+    h3 { margin-bottom: 10px; font-size: 1.22rem; line-height: 1.25; }
+    .lead { max-width: 62ch; color: #4e4038; font-size: 1rem; line-height: 1.58; }
+    .section-head { max-width: 760px; margin-bottom: 24px; }
+    .section-head p:last-child { margin-bottom: 0; }
+    .muted { color: #6f5d53; }
+    .accent { color: var(--orange-dark); }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+    .skip-link {
+      position: fixed;
+      top: 8px;
+      left: 8px;
+      z-index: 1000;
+      transform: translateY(-140%);
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: #fff;
+      color: #000;
+      font-weight: 800;
+    }
+    .skip-link:focus { transform: translateY(0); }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      background: rgba(33, 27, 24, .96);
+      color: var(--cream-light);
+      backdrop-filter: blur(14px);
+    }
+    .header-inner { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .brand { min-width: 150px; max-width: 220px; display: inline-flex; align-items: center; text-decoration: none; }
+    .brand-fallback { font-family: Impact, "Arial Narrow", sans-serif; font-size: 1.22rem; letter-spacing: .045em; text-transform: uppercase; white-space: nowrap; }
+    .brand-fallback b { color: var(--orange); }
+    .header-nav { display: none; align-items: center; gap: 22px; }
+    .header-nav a { color: #fff8e9; font-size: .9rem; font-weight: 750; text-decoration: none; }
+    .header-nav a:hover { color: #ff9b5f; }
+    .btn {
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 20px;
+      border: 2px solid transparent;
+      border-radius: 999px;
+      font-weight: 850;
+      line-height: 1.2;
+      text-align: center;
+      text-decoration: none;
+      transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--orange); color: #201713; box-shadow: 0 12px 30px rgba(229,111,51,.27); }
+    .btn-primary:hover { background: #f07d3e; }
+    .btn-dark { background: var(--ink); color: #fff9ef; }
+    .btn-outline { border-color: currentColor; background: transparent; color: var(--ink); }
+    .btn-whatsapp { background: var(--green); color: white; box-shadow: 0 12px 28px rgba(28,139,76,.24); }
+    .header-cta { min-height: 42px; padding: 9px 15px; font-size: .86rem; }
+    .text-link { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; color: var(--ink); font-weight: 850; text-underline-offset: 4px; }
+
+    .hero {
+      overflow: hidden;
+      padding: 24px 0 36px;
+      background: radial-gradient(circle at 90% 20%, rgba(229,111,51,.2), transparent 34%);
+    }
+    .hero-grid { display: grid; gap: 18px; align-items: center; }
+    .hero-copy { position: relative; z-index: 2; }
+    .hero h1 span { display: block; color: var(--red); }
+    .hero .lead { margin-bottom: 14px; }
+    .hero-actions { display: grid; gap: 10px; }
+    .hero-note { display: none; margin: 8px 0 0; color: #67554c; font-size: .8rem; }
+    .trust-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 14px; }
+    .trust-chip { display: inline-flex; align-items: center; gap: 7px; padding: 8px 11px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,249,238,.74); font-size: .81rem; font-weight: 800; }
+    .star { color: #e2a300; }
+
+    .asset-placeholder {
+      min-height: 240px;
+      position: relative;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border: 2px dashed rgba(33,27,24,.28);
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(255,255,255,.5), rgba(107,66,49,.08));
+      color: #6a574d;
+      text-align: center;
+    }
+    .asset-placeholder::before { content: "VISUAL PLACEHOLDER"; font-size: .72rem; font-weight: 900; letter-spacing: .13em; }
+    .asset-placeholder::after { content: attr(data-file); position: absolute; left: 12px; right: 12px; bottom: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .68rem; overflow-wrap: anywhere; }
+    .asset-placeholder.has-image { display: block; min-height: 0; border: 0; background: none; }
+    .asset-placeholder.has-image::before, .asset-placeholder.has-image::after { display: none; }
+    .asset-placeholder img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-visual { aspect-ratio: 16 / 10; min-height: 0; box-shadow: var(--shadow); }
+    .hero-visual picture { display: block; width: 100%; height: 100%; }
+    .hero-visual img { object-position: center 48%; }
+    .logo-slot { min-height: 0; width: 190px; height: 58px; border: 0; background: transparent; color: rgba(255,255,255,.65); }
+    .logo-slot::before { content: "LOGO"; }
+    .logo-slot::after { display: none; }
+    .logo-slot img { object-fit: contain; }
+
+    .value-strip { background: var(--red); color: #fff8e9; }
+    .value-strip.section-tight { padding: 0; }
+    .value-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+    .value-item { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 14px 5px; border-right: 1px solid rgba(255,255,255,.24); text-align: center; }
+    .value-item:last-child { border-right: 0; }
+    .value-icon { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: var(--cream); color: var(--ink); font-size: .72rem; font-weight: 950; }
+    .value-item h3 { margin: 0; font-size: .76rem; line-height: 1.25; }
+    .value-item p { margin: 0; color: rgba(255,255,255,.82); font-size: .88rem; line-height: 1.45; }
+    .value-item p { display: none; }
+
+    .package-grid { display: grid; gap: 16px; }
+    .package-visual { margin-bottom: 18px; aspect-ratio: 3 / 2; }
+    .package-card { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,249,238,.9); box-shadow: 0 10px 30px rgba(33,27,24,.08); }
+    .package-card.featured { border: 2px solid var(--orange); }
+    .package-top { padding: 24px 22px 18px; background: var(--ink); color: #fff9ef; }
+    .package-card.featured .package-top { background: var(--red); }
+    .package-label { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+    .package-name { font-family: Impact, "Arial Narrow", sans-serif; font-size: 2.15rem; line-height: 1; letter-spacing: .02em; text-transform: uppercase; }
+    .package-capacity { display: inline-block; margin-top: 8px; color: #f5d8c5; font-size: .88rem; font-weight: 750; }
+    .price { text-align: right; font-family: Impact, "Arial Narrow", sans-serif; font-size: 2.25rem; line-height: .95; color: #ff995b; white-space: nowrap; }
+    .package-body { padding: 18px; }
+    .menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 7px 12px; margin: 0 0 18px; padding: 0; list-style: none; }
+    .menu-list li { position: relative; padding-left: 18px; color: #4e3f37; font-size: .8rem; line-height: 1.4; }
+    .menu-list li::before { content: "✓"; position: absolute; left: 0; color: var(--orange-dark); font-weight: 950; }
+    .package-card .btn { width: 100%; }
+    .package-note { margin: 14px 0 0; color: #725f54; font-size: .78rem; text-align: center; }
+
+    .split { display: grid; gap: 26px; align-items: center; }
+    .visual-3x2 { aspect-ratio: 3 / 2; min-height: 0; }
+    .visual-4x3 { aspect-ratio: 4 / 3; min-height: 0; }
+    .visual-4x5 { aspect-ratio: 4 / 5; min-height: 0; }
+    .visual-1x1 { aspect-ratio: 1; min-height: 0; }
+    .bullet-list { margin: 22px 0; padding: 0; list-style: none; }
+    .bullet-list li { position: relative; padding: 10px 0 10px 34px; border-bottom: 1px solid var(--line); }
+    .bullet-list li::before { content: "✓"; position: absolute; left: 4px; top: 10px; color: var(--orange-dark); font-weight: 950; }
+
+    .dark-section {
+      color: #fff8ec;
+      background-color: var(--ink);
+      background-image: linear-gradient(rgba(33,27,24,.9), rgba(33,27,24,.96)), var(--bg-charcoal);
+      background-repeat: repeat;
+    }
+    .dark-section .eyebrow { color: #ff995b; }
+    .dark-section .lead, .dark-section .muted { color: #d9cabc; }
+    .equipment-layout { display: grid; gap: 30px; }
+    .rule-grid { display: grid; gap: 12px; }
+    .rule-card { padding: 20px; border: 1px solid rgba(255,255,255,.17); border-radius: 18px; background: rgba(255,255,255,.06); }
+    .rule-number { margin-bottom: 8px; color: #ff995b; font-family: Impact, "Arial Narrow", sans-serif; font-size: 2rem; line-height: 1; }
+    .rule-card strong { display: block; margin-bottom: 4px; font-size: 1.02rem; }
+    .rule-card p { margin: 0; color: #d7c8bb; font-size: .9rem; }
+    .important-note { margin-top: 18px; padding: 16px 18px; border-left: 4px solid var(--orange); border-radius: 0 14px 14px 0; background: rgba(229,111,51,.12); color: #f6e5d6; }
+
+    .steamboat-section { background-color: #754735; background-image: linear-gradient(rgba(107,66,49,.78), rgba(107,66,49,.88)), var(--bg-warm); background-repeat: repeat; color: #fff9ef; }
+    .steamboat-section .eyebrow { color: #ffd0ad; }
+    .steamboat-section .lead { color: #f2ded1; }
+    .steamboat-card { display: grid; gap: 18px; }
+    .steam-copy { padding: 24px; border-radius: var(--radius); background: rgba(33,27,24,.78); }
+    .steam-price { margin: 0 0 4px; font-family: Impact, "Arial Narrow", sans-serif; font-size: 3.35rem; line-height: 1; color: #ff995b; }
+    .steam-list { columns: 2; column-gap: 26px; margin: 20px 0; padding-left: 18px; color: #f2ded1; font-size: .88rem; }
+    .steam-equipment { padding-top: 16px; border-top: 1px solid rgba(255,255,255,.16); }
+    .steam-visuals { display: grid; gap: 10px; align-content: start; }
+    .steam-thumb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    .steps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; counter-reset: steps; }
+    .step-card { counter-increment: steps; min-height: 145px; padding: 16px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,249,238,.78); }
+    .step-card::before { content: "0" counter(steps); display: block; margin-bottom: 12px; color: var(--red); font-family: Impact, "Arial Narrow", sans-serif; font-size: 2rem; line-height: 1; }
+    .step-card h3 { font-size: 1rem; }
+    .step-card p { margin: 0; color: #66544a; font-size: .78rem; line-height: 1.45; }
+
+    .gallery-grid { display: grid; grid-auto-flow: column; grid-auto-columns: 84%; gap: 12px; overflow-x: auto; padding: 0 2px 12px; scroll-snap-type: x mandatory; overscroll-behavior-inline: contain; scrollbar-width: thin; }
+    .gallery-grid > * { scroll-snap-align: start; }
+    .trust-panel { margin-top: 18px; display: grid; gap: 16px; padding: 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--cream-light); }
+    .rating-proof { min-height: 0; aspect-ratio: 4 / 1; border: 0; background: #202124; }
+    .rating-copy p { margin-bottom: 0; }
+
+    .delivery-grid { display: grid; gap: 14px; }
+    .delivery-card { padding: 22px; border-radius: 18px; background: var(--cream-light); border: 1px solid var(--line); }
+    .delivery-card .kicker { display: inline-block; margin-bottom: 12px; padding: 5px 9px; border-radius: 999px; background: #f4d8c4; color: #7b2d1f; font-size: .73rem; font-weight: 900; text-transform: uppercase; letter-spacing: .08em; }
+    .delivery-card p:last-child { margin-bottom: 0; }
+
+    .faq-list { display: grid; gap: 10px; max-width: 900px; margin: 0 auto; }
+    details { border: 1px solid var(--line); border-radius: 16px; background: rgba(255,249,238,.84); }
+    summary { cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px; font-weight: 850; line-height: 1.4; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; flex: 0 0 auto; color: var(--orange-dark); font-size: 1.5rem; }
+    details[open] summary::after { content: "−"; }
+    details p { margin: 0; padding: 0 18px 18px; color: #604f45; }
+
+    .final-cta {
+      overflow: hidden;
+      background-color: var(--ink);
+      background-image: linear-gradient(90deg, rgba(33,27,24,.95), rgba(33,27,24,.82)), var(--bg-smoke);
+      background-repeat: repeat;
+      color: #fff9ef;
+    }
+    .final-card { display: grid; gap: 24px; align-items: center; }
+    .final-card h2 { max-width: 750px; margin-bottom: 14px; }
+    .final-card p { max-width: 620px; color: #d9c9bc; }
+    .final-actions { display: grid; gap: 10px; }
+
+    footer { padding: 34px 0 96px; background: #171210; color: #d9cabc; }
+    .footer-grid { display: grid; gap: 18px; }
+    .footer-title { color: #fff9ef; font-weight: 850; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 12px 20px; }
+    .footer-links a { color: #e6d9ce; text-decoration: none; }
+    .footer-small { color: #9f8f84; font-size: .78rem; }
+
+    .mobile-sticky {
+      position: fixed;
+      left: 10px;
+      right: 10px;
+      bottom: max(10px, env(safe-area-inset-bottom));
+      z-index: 99;
+    }
+    .mobile-sticky .btn { width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,.32); }
+
+    @media (min-width: 560px) {
+      .hero-actions, .final-actions { grid-template-columns: max-content max-content; }
+      .delivery-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (min-width: 768px) {
+      .section { padding: 84px 0; }
+      .hero { padding: 58px 0 72px; }
+      .hero-note { display: block; }
+      .hero-grid { grid-template-columns: minmax(0, .88fr) minmax(420px, 1.12fr); gap: 50px; }
+      .hero-visual { aspect-ratio: 16 / 9; }
+      .value-item { display: grid; grid-template-columns: 46px 1fr; align-items: center; gap: 12px; padding: 24px 26px; text-align: left; }
+      .value-item:last-child { border-right: 0; }
+      .value-icon { width: 44px; height: 44px; font-size: .82rem; }
+      .value-item h3 { margin: 0 0 3px; font-size: 1rem; }
+      .value-item p { display: block; }
+      .package-grid { grid-template-columns: 1fr 1fr; }
+      .split { grid-template-columns: 1fr 1fr; gap: 54px; }
+      .split.reverse > :first-child { order: 2; }
+      .equipment-layout { grid-template-columns: .85fr 1.15fr; align-items: center; }
+      .rule-grid { grid-template-columns: 1fr 1fr; }
+      .steamboat-card { grid-template-columns: .82fr 1.18fr; align-items: stretch; }
+      .steps-grid { grid-template-columns: repeat(4, 1fr); }
+      .gallery-grid { grid-auto-flow: row; grid-auto-columns: auto; grid-template-columns: 1fr 1fr; overflow: visible; padding: 0; scroll-snap-type: none; }
+      .gallery-grid .wide { grid-column: 1 / -1; }
+      .trust-panel { grid-template-columns: minmax(360px, .9fr) 1fr auto; align-items: center; }
+      .delivery-grid { grid-template-columns: repeat(3, 1fr); }
+      .final-card { grid-template-columns: 1fr auto; }
+      .footer-grid { grid-template-columns: 1fr auto; align-items: start; }
+      .mobile-sticky { display: none; }
+      footer { padding-bottom: 40px; }
+    }
+
+    @media (max-width: 767px) {
+      .gallery-grid .asset-placeholder { aspect-ratio: 4 / 3; align-self: start; }
+    }
+
+    @media (min-width: 980px) {
+      .header-nav { display: flex; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke isi utama</a>
+
+  <!-- Tempel snippet GTM noscript di sini setelah container ID dikonfirmasi. -->
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="HolyBarbeque Home Service">
+        <div class="asset-placeholder logo-slot" data-asset="headerLogo" data-file="holybbq-hs-00-header-logo-transparent.webp">
+          <span class="brand-fallback">Holy<b>Barbeque</b></span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navigasi utama">
+        <a href="#paket">Paket</a>
+        <a href="#alat">Peralatan</a>
+        <a href="#cara-pesan">Cara Pesan</a>
+        <a href="#pengiriman">Pengiriman</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-primary header-cta gtm-click-whatsapp" data-cta-location="header" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20mau%20tanya%20Paket%20Home%20Service." target="_blank" rel="noopener">Chat Admin</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">BBQ & Steamboat Home Service Cirebon</p>
+          <h1>BBQ-an di Rumah, <span>Alatnya Kami Siapkan</span></h1>
+          <p class="lead">Pilih paket daging marinasi dan Holy Steamboat untuk acara keluarga atau kumpul bersama. Makanan, saus homemade, dan peralatan masak disiapkan dalam satu layanan.</p>
+          <div class="trust-row" aria-label="Informasi kepercayaan">
+            <span class="trust-chip"><span class="star">★</span> 4,9 dari 2.142 Google reviews</span>
+            <span class="trust-chip">Mulai Rp72K</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-whatsapp gtm-click-whatsapp" data-cta-location="hero" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20mau%20cek%20ketersediaan%20Paket%20Home%20Service%20untuk%20tanggal%20%5BTanggal%5D%20di%20%5BArea%5D." target="_blank" rel="noopener">Cek Ketersediaan via WhatsApp</a>
+            <a class="text-link gtm-click-view-menu" href="#paket">Lihat Paket & Harga ↓</a>
+          </div>
+          <p class="hero-note">Konfirmasi tanggal dan area pengiriman kepada admin sebelum melakukan pembayaran.</p>
+        </div>
+
+        <div class="asset-placeholder hero-visual" data-asset-mobile="heroMobile" data-asset-desktop="heroDesktop" data-file="holybbq-hs-01-hero-mobile-4x5.webp / holybbq-hs-01-hero-desktop-16x9.webp" role="img" aria-label="Placeholder visual kegiatan BBQ HolyBarbeque Home Service di rumah"></div>
+      </div>
+    </section>
+
+    <section class="value-strip section-tight" aria-label="Keunggulan layanan">
+      <div class="container value-grid">
+        <article class="value-item">
+          <span class="value-icon" aria-hidden="true">01</span>
+          <div><h3>Makanan siap dimasak</h3><p>Daging marinasi, sayuran, dan saus disiapkan sesuai paket.</p></div>
+        </article>
+        <article class="value-item">
+          <span class="value-icon" aria-hidden="true">02</span>
+          <div><h3>Alat BBQ dipinjamkan</h3><p>Kompor, pan grill, capitan, gunting, sendok, dan sumpit.</p></div>
+        </article>
+        <article class="value-item">
+          <span class="value-icon" aria-hidden="true">03</span>
+          <div><h3>Bisa diantar dan dijemput</h3><p>Ketentuannya disesuaikan dengan jarak dari HolyBarbeque.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section view-content-section" id="paket">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Pilih paket BBQ</p>
+          <h2>Paket untuk makan ramean di rumah</h2>
+          <p class="lead">Harga dan kapasitas dibuat jelas agar Anda bisa memilih paket berdasarkan jumlah orang dan kebutuhan acara.</p>
+        </div>
+
+        <div class="asset-placeholder package-visual" data-asset="packageMenu" data-file="holybbq-hs-12-package-menu-flatlay-3x2.webp" role="img" aria-label="Isi paket daging, sayuran, dan saus HolyBarbeque Home Service"></div>
+
+        <div class="package-grid">
+          <article class="package-card">
+            <div class="package-top">
+              <div class="package-label">
+                <div><div class="package-name">Paket A</div><span class="package-capacity">Untuk 3–6 orang</span></div>
+                <div class="price">241K</div>
+              </div>
+            </div>
+            <div class="package-body">
+              <ul class="menu-list">
+                <li>Beef slice 300 gr</li>
+                <li>Wagyu cube 200 gr</li>
+                <li>Dragon karubi 200 gr</li>
+                <li>Rib eye wagyu 200 gr</li>
+                <li>Salada 150 gr</li>
+                <li>Bawang bombay 150 gr</li>
+                <li>4 macam saus</li>
+                <li>Bumbu marinasi HolyBBQ</li>
+              </ul>
+              <a class="btn btn-dark gtm-click-whatsapp" data-cta-location="package-a" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20tertarik%20Paket%20A%20Home%20Service%20untuk%20tanggal%20%5BTanggal%5D%20di%20%5BArea%5D." target="_blank" rel="noopener">Tanya Paket A</a>
+              <p class="package-note">Sudah termasuk pinjaman set alat BBQ sesuai ketentuan jumlah paket.</p>
+            </div>
+          </article>
+
+          <article class="package-card featured">
+            <div class="package-top">
+              <div class="package-label">
+                <div><div class="package-name">Paket B</div><span class="package-capacity">Untuk 4–7 orang</span></div>
+                <div class="price">286K</div>
+              </div>
+            </div>
+            <div class="package-body">
+              <ul class="menu-list">
+                <li>Beef slice 300 gr</li>
+                <li>Wagyu cube 300 gr</li>
+                <li>Dragon karubi 400 gr</li>
+                <li>Rib eye wagyu 200 gr</li>
+                <li>Salada 150 gr</li>
+                <li>Bawang bombay 150 gr</li>
+                <li>4 macam saus</li>
+                <li>Bumbu marinasi HolyBBQ</li>
+              </ul>
+              <a class="btn btn-primary gtm-click-whatsapp" data-cta-location="package-b" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20tertarik%20Paket%20B%20Home%20Service%20untuk%20tanggal%20%5BTanggal%5D%20di%20%5BArea%5D." target="_blank" rel="noopener">Tanya Paket B</a>
+              <p class="package-note">Sudah termasuk pinjaman set alat BBQ sesuai ketentuan jumlah paket.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container split">
+        <div class="asset-placeholder visual-1x1" data-asset="fourSauces" data-file="holybbq-hs-03-four-sauces-1x1.webp" role="img" aria-label="Placeholder empat saus homemade HolyBarbeque"></div>
+        <div>
+          <p class="eyebrow">Saus homemade</p>
+          <h2>Empat pilihan saus khas HolyBarbeque</h2>
+          <p class="lead">Lengkapi daging panggang dengan Blackpepper, Chilli Oil, Barbeque, dan saus sambal. Saus serta bumbu marinasi sudah termasuk di dalam paket.</p>
+          <ul class="bullet-list">
+            <li>Blackpepper</li>
+            <li>Special Chilli Oil</li>
+            <li>Barbeque</li>
+            <li>Saus sambal</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="alat">
+      <div class="container equipment-layout">
+        <div>
+          <p class="eyebrow">Peralatan BBQ</p>
+          <h2>Set lengkap, jumlahnya mengikuti pesanan</h2>
+          <p class="lead">Set BBQ berisi kompor, pan grill, sekitar empat pasang sendok dan sumpit, satu capitan, serta satu gunting.</p>
+          <div class="asset-placeholder visual-3x2" data-asset="bbqCompleteSet" data-file="holybbq-hs-02-bbq-complete-set-3x2.webp" role="img" aria-label="Placeholder set peralatan BBQ lengkap"></div>
+        </div>
+
+        <div>
+          <div class="rule-grid">
+            <article class="rule-card">
+              <div class="rule-number">1–4</div>
+              <strong>Paket A/B</strong>
+              <p>Mendapat satu set alat BBQ lengkap.</p>
+            </article>
+            <article class="rule-card">
+              <div class="rule-number">5+</div>
+              <strong>Paket A/B</strong>
+              <p>Mendapat dua set alat BBQ lengkap.</p>
+            </article>
+            <article class="rule-card">
+              <div class="rule-number">2 + 1</div>
+              <strong>Contoh pesanan</strong>
+              <p>Dua paket BBQ + satu Steamboat mendapatkan dua kompor total.</p>
+            </article>
+            <article class="rule-card">
+              <div class="rule-number">100K</div>
+              <strong>Deposit alat</strong>
+              <p>Deposit dikembalikan setelah peralatan diterima kembali dan diperiksa.</p>
+            </article>
+          </div>
+          <div class="important-note"><strong>Penting:</strong> membeli dua paket BBQ tidak otomatis mendapatkan dua kompor. Dua set alat BBQ diberikan untuk pemesanan minimal lima paket BBQ.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steamboat-section" id="steamboat">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Tambahan menu berkuah</p>
+          <h2>Holy Steamboat</h2>
+          <p class="lead">Pilihan untuk melengkapi acara dengan kuah kaldu atau tomyum, beserta satu set alat Steamboat tersendiri.</p>
+        </div>
+
+        <div class="steamboat-card">
+          <div class="steam-visuals">
+            <div class="asset-placeholder visual-4x5" data-asset="steamboatIngredients" data-file="holybbq-hs-05-steamboat-ingredients-4x5.webp" role="img" aria-label="Placeholder bahan Holy Steamboat"></div>
+            <div class="steam-thumb-grid">
+              <div class="asset-placeholder visual-3x2" data-asset="steamboatCooked" data-file="holybbq-hs-06-steamboat-cooked-3x2.webp" role="img" aria-label="Placeholder Holy Steamboat matang"></div>
+              <div class="asset-placeholder visual-3x2" data-asset="steamboatEquipment" data-file="holybbq-hs-07-steamboat-equipment-3x2.webp" role="img" aria-label="Placeholder peralatan Holy Steamboat"></div>
+            </div>
+          </div>
+          <div class="steam-copy">
+            <p class="steam-price">72K</p>
+            <p><strong>Untuk 4–6 orang</strong></p>
+            <p>Pilihan kuah: kaldu atau tomyum.</p>
+            <ul class="steam-list">
+              <li>Udon</li>
+              <li>Chikuwa</li>
+              <li>Baso ikan</li>
+              <li>Fish roll</li>
+              <li>Crab meat</li>
+              <li>Cheese fish ball</li>
+              <li>Duo twister</li>
+              <li>Sawi putih</li>
+              <li>Baby pakcoy</li>
+              <li>Jamur kuping</li>
+              <li>Jamur enoki balut beef</li>
+            </ul>
+            <div class="steam-equipment">
+              <strong>Peralatan yang didapat:</strong>
+              <p>Satu kompor, satu panci, dan satu ladle atau sendok kuah.</p>
+            </div>
+            <a class="btn btn-primary gtm-click-whatsapp" data-cta-location="steamboat" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20mau%20tanya%20Holy%20Steamboat%20Home%20Service%20untuk%20tanggal%20%5BTanggal%5D%20di%20%5BArea%5D." target="_blank" rel="noopener">Tanya Holy Steamboat</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cara-pesan">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Cara pesan</p>
+          <h2>Empat langkah sampai BBQ-an di rumah</h2>
+          <p class="lead">Admin akan membantu memastikan paket, jumlah alat, tanggal, dan metode pengiriman sebelum pembayaran.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card"><h3>Pilih paket</h3><p>Pilih Paket A, Paket B, Holy Steamboat, atau kombinasinya.</p></article>
+          <article class="step-card"><h3>Konfirmasi acara</h3><p>Informasikan tanggal, jam, lokasi, dan perkiraan jumlah orang.</p></article>
+          <article class="step-card"><h3>Lakukan pembayaran</h3><p>Pembayaran paket dan deposit alat dilakukan melalui transfer.</p></article>
+          <article class="step-card"><h3>Terima dan kembalikan</h3><p>Gunakan peralatan untuk acara, lalu kembalikan maksimal H+1.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container split reverse">
+        <div class="asset-placeholder visual-3x2" data-asset="grillAction" data-file="holybbq-hs-04-grill-action-3x2.webp" role="img" aria-label="Placeholder aktivitas memanggang daging di rumah"></div>
+        <div>
+          <p class="eyebrow">Masak langsung saat acara</p>
+          <h2>Panggang dan santap sesuai ritme acara</h2>
+          <p class="lead">Daging sudah dimarinasi. Anda tinggal menyalakan kompor, memanggangnya di pan grill, lalu menikmati bersama keluarga atau teman.</p>
+          <a class="btn btn-dark gtm-click-whatsapp" data-cta-location="experience" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20mau%20konsultasi%20jumlah%20Paket%20Home%20Service%20yang%20sesuai%20untuk%20acara%20saya." target="_blank" rel="noopener">Konsultasikan Jumlah Paket</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="dokumentasi">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Dokumentasi & kepercayaan</p>
+          <h2>Dipakai untuk acara bersama di rumah</h2>
+          <p class="lead">Dokumentasi Home Service menunjukkan penggunaan nyata. Foto outlet digunakan sebagai penguat identitas HolyBarbeque, bukan sebagai bukti layanan di rumah.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="asset-placeholder visual-3x2" data-asset="homeActivity" data-file="holybbq-hs-08-home-activity-3x2.webp" role="img" aria-label="Placeholder aktivitas Home Service"></div>
+          <div class="asset-placeholder visual-4x5" data-asset="realDocumentation" data-file="holybbq-hs-09-real-documentation-4x5.webp" role="img" aria-label="Placeholder dokumentasi asli acara BBQ"></div>
+          <div class="asset-placeholder visual-3x2" data-asset="outletCrowd" data-file="holybbq-hs-10-outlet-crowd-16x9.webp" role="img" aria-label="Placeholder suasana outlet HolyBarbeque"></div>
+          <div class="asset-placeholder visual-4x3" data-asset="storefront" data-file="holybbq-hs-11-storefront-4x3.webp" role="img" aria-label="Placeholder tampak depan outlet HolyBarbeque Cirebon"></div>
+        </div>
+
+        <div class="trust-panel" id="ulasan">
+          <div class="asset-placeholder rating-proof" data-asset="ratingProof" data-file="holybbq-hs-13-google-rating-proof-4x1.webp" role="img" aria-label="Tangkapan layar rating 4,9 dan 2.142 Google reviews Holy Barbeque Cirebon"></div>
+          <div class="rating-copy">
+            <h3>Rating Google HolyBarbeque Cirebon</h3>
+            <p>Rating 4,9 dari 2.142 Google reviews pada tangkapan layar Google Business Profile.</p>
+          </div>
+          <a class="btn btn-outline gtm-click-google-maps" href="#" data-maps-url="" target="_blank" rel="noopener">Lihat Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pengiriman">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Pengiriman & pengembalian</p>
+          <h2>Ketentuannya dijelaskan sebelum pembayaran</h2>
+          <p class="lead">Pastikan alamat, jadwal, serta metode pengembalian alat sudah dikonfirmasi kepada admin.</p>
+        </div>
+        <div class="delivery-grid">
+          <article class="delivery-card">
+            <span class="kicker">Radius sampai 4 km</span>
+            <h3>Diantar dan dijemput Holy</h3>
+            <p>Biaya layanan pengiriman Rp10.000. Konfirmasi cakupan alamat kepada admin.</p>
+          </article>
+          <article class="delivery-card">
+            <span class="kicker">Di luar radius 4 km</span>
+            <h3>GoSend atau ambil sendiri</h3>
+            <p>Biaya GoSend mengikuti aplikasi. Peralatan dikembalikan melalui GoSend atau langsung ke HolyBarbeque.</p>
+          </article>
+          <article class="delivery-card">
+            <span class="kicker">Peralatan</span>
+            <h3>Deposit Rp100.000</h3>
+            <p>Peralatan wajib dikembalikan maksimal H+1. Deposit ditransfer kembali setelah alat diterima dan diperiksa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head" style="margin-inline:auto;text-align:center">
+          <p class="eyebrow">Pertanyaan yang sering ditanyakan</p>
+          <h2>Sebelum memesan</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Kalau membeli dua paket BBQ, apakah mendapat dua kompor?</summary>
+            <p>Tidak. Pemesanan satu sampai empat Paket A/B mendapat satu set alat BBQ lengkap. Dua set alat BBQ lengkap diberikan untuk pemesanan minimal lima paket BBQ.</p>
+          </details>
+          <details>
+            <summary>Kalau menambahkan Holy Steamboat, apakah mendapat kompor tambahan?</summary>
+            <p>Ya. Set Holy Steamboat memiliki satu kompor, satu panci, dan satu ladle sendiri. Contohnya, dua paket BBQ ditambah satu Steamboat mendapatkan dua kompor total.</p>
+          </details>
+          <details>
+            <summary>Berapa deposit untuk peminjaman alat?</summary>
+            <p>Deposit alat sebesar Rp100.000. Deposit dikembalikan setelah alat diterima kembali dan diperiksa.</p>
+          </details>
+          <details>
+            <summary>Kapan alat harus dikembalikan?</summary>
+            <p>Peralatan harus dikembalikan maksimal H+1 setelah acara.</p>
+          </details>
+          <details>
+            <summary>Bagaimana ketentuan waktu pemesanan?</summary>
+            <p>Untuk kebutuhan sebelum pukul 16.00, lakukan pemesanan paling lambat H-1. Untuk kebutuhan pukul 16.00–22.00, hubungi admin minimal satu jam sebelumnya. Semua pesanan tetap mengikuti ketersediaan paket, alat, dan pengiriman.</p>
+          </details>
+          <details>
+            <summary>Apakah pembayaran dilakukan di awal?</summary>
+            <p>Ya. Pembayaran paket, biaya pengiriman yang berlaku, dan deposit alat dilakukan melalui transfer setelah detail pesanan dikonfirmasi admin.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="container final-card">
+        <div>
+          <p class="eyebrow">Cek tanggal sebelum kehabisan alat</p>
+          <h2>Siapkan acara BBQ di rumah bersama HolyBarbeque</h2>
+          <p>Kirim tanggal acara, area, dan jumlah orang. Admin akan membantu memilih paket serta menghitung jumlah alat yang didapat.</p>
+        </div>
+        <div class="final-actions">
+          <a class="btn btn-whatsapp gtm-click-whatsapp" data-cta-location="final" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20mau%20cek%20ketersediaan%20Paket%20Home%20Service%20untuk%20tanggal%20%5BTanggal%5D%20di%20%5BArea%5D%20dengan%20jumlah%20%5BJumlah%20Orang%5D." target="_blank" rel="noopener">Chat Admin Sekarang</a>
+          <a class="btn btn-outline" style="color:#fff9ef" href="#paket">Lihat Paket Lagi</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-title">HolyBarbeque Cirebon</p>
+        <p>Jl. DR. Sutomo No.43, Pekiringan, Kesambi, Kota Cirebon<br>WhatsApp: 0852-2001-1315</p>
+        <p class="footer-small">Informasi harga, paket, area layanan, dan ketersediaan alat dapat berubah. Konfirmasi terakhir dilakukan melalui admin.</p>
+      </div>
+      <nav class="footer-links" aria-label="Navigasi footer">
+        <a href="#paket">Paket</a>
+        <a href="#alat">Peralatan</a>
+        <a href="#pengiriman">Pengiriman</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="mobile-sticky">
+    <a class="btn btn-whatsapp gtm-click-whatsapp" data-cta-location="mobile-sticky" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20mau%20tanya%20Paket%20Home%20Service." target="_blank" rel="noopener">Chat Admin via WhatsApp</a>
+  </div>
+
+  <script>
+    /*
+      ================================================================
+      ASSET URL CONFIGURATION — TERHUBUNG DENGAN IMGBB
+      ================================================================
+    */
+    const ASSETS = Object.freeze({
+      headerLogo: "https://i.ibb.co.com/WWd4wKpy/holybbq-hs-00-header-logo-transparent.webp",
+      heroDesktop: "https://i.ibb.co.com/ycyZn20m/holybbq-hs-01-hero-desktop-16x9.webp",
+      heroMobile: "https://i.ibb.co.com/mCN7ShT8/holybbq-hs-01-hero-mobile-4x5.webp",
+      packageMenu: "https://i.ibb.co.com/Vcc3JwJr/holybbq-hs-12-package-menu-flatlay-3x2.webp",
+      bbqCompleteSet: "https://i.ibb.co.com/4ZVNH0Nz/holybbq-hs-02-bbq-complete-set-3x2.webp",
+      fourSauces: "https://i.ibb.co.com/7JT18z7P/holybbq-hs-03-four-sauces-1x1.webp",
+      grillAction: "https://i.ibb.co.com/PGxXR5cM/holybbq-hs-04-grill-action-3x2.webp",
+      steamboatIngredients: "https://i.ibb.co.com/vvYdqbTQ/holybbq-hs-05-steamboat-ingredients-4x5.webp",
+      steamboatCooked: "https://i.ibb.co.com/DPpPfBS7/holybbq-hs-06-steamboat-cooked-3x2.webp",
+      steamboatEquipment: "https://i.ibb.co.com/gFRsQD5D/holybbq-hs-07-steamboat-equipment-3x2.webp",
+      homeActivity: "https://i.ibb.co.com/hxDHJRJk/holybbq-hs-08-home-activity-3x2.webp",
+      realDocumentation: "https://i.ibb.co.com/97c8ky7/holybbq-hs-09-real-documentation-4x5.webp",
+      outletCrowd: "https://i.ibb.co.com/vCZ0SWS4/holybbq-hs-10-outlet-crowd-16x9.webp",
+      storefront: "https://i.ibb.co.com/2YRKdTPf/holybbq-hs-11-storefront-4x3.webp",
+      ratingProof: "https://i.ibb.co.com/GfzDMyYf/holybbq-hs-13-google-rating-proof-4x1.webp",
+      bgPaperCream: "https://i.ibb.co.com/qL4ptrzz/holybbq-hs-bg-01-paper-cream.webp",
+      bgCharcoalTexture: "https://i.ibb.co.com/B5DgRkqG/holybbq-hs-bg-02-charcoal-texture.webp",
+      bgWarmBrown: "https://i.ibb.co.com/QSv4QjC/holybbq-hs-bg-03-warm-brown.webp",
+      bgSmokeOverlay: "https://i.ibb.co.com/QjMGx09h/holybbq-hs-bg-04-smoke-overlay.webp"
+    });
+
+    const GOOGLE_MAPS_URL = ""; // Tempel URL Google Maps / GBP HolyBarbeque Cirebon jika ada.
+
+    const DIMENSIONS = Object.freeze({
+      headerLogo: [562, 173],
+      packageMenu: [1200, 800],
+      bbqCompleteSet: [1200, 800],
+      fourSauces: [800, 800],
+      grillAction: [1200, 800],
+      steamboatIngredients: [960, 1200],
+      steamboatCooked: [1200, 800],
+      steamboatEquipment: [1200, 800],
+      homeActivity: [1200, 800],
+      realDocumentation: [960, 1200],
+      outletCrowd: [1200, 675],
+      storefront: [1200, 900],
+      ratingProof: [1200, 300]
+    });
+
+    window.dataLayer = window.dataLayer || [];
+
+    function pushEvent(eventName, detail = {}) {
+      window.dataLayer.push({ event: eventName, ...detail });
+    }
+
+    function addImage(slot, url, alt, priority = false, dimensions = null) {
+      if (!url) return;
+      const img = document.createElement("img");
+      img.src = url;
+      img.alt = alt || "";
+      img.decoding = "async";
+      if (dimensions) {
+        img.width = dimensions[0];
+        img.height = dimensions[1];
+      }
+      if (priority) {
+        img.fetchPriority = "high";
+      } else {
+        img.loading = "lazy";
+      }
+      slot.replaceChildren(img);
+      slot.classList.add("has-image");
+    }
+
+    function renderAssets() {
+      document.querySelectorAll("[data-asset]").forEach((slot) => {
+        const key = slot.dataset.asset;
+        addImage(slot, ASSETS[key], slot.getAttribute("aria-label") || "", key === "headerLogo", DIMENSIONS[key]);
+      });
+
+      const hero = document.querySelector("[data-asset-mobile][data-asset-desktop]");
+      if (hero && (ASSETS.heroMobile || ASSETS.heroDesktop)) {
+        const picture = document.createElement("picture");
+        if (ASSETS.heroMobile) {
+          const source = document.createElement("source");
+          source.media = "(max-width: 767px)";
+          source.srcset = ASSETS.heroMobile;
+          picture.appendChild(source);
+        }
+        const img = document.createElement("img");
+        img.src = ASSETS.heroDesktop || ASSETS.heroMobile;
+        img.alt = "Kegiatan BBQ HolyBarbeque Home Service bersama keluarga dan teman di rumah";
+        img.width = 1600;
+        img.height = 900;
+        img.decoding = "async";
+        img.fetchPriority = "high";
+        picture.appendChild(img);
+        hero.replaceChildren(picture);
+        hero.classList.add("has-image");
+      }
+
+      const backgroundMap = {
+        bgPaperCream: "--bg-paper",
+        bgCharcoalTexture: "--bg-charcoal",
+        bgWarmBrown: "--bg-warm",
+        bgSmokeOverlay: "--bg-smoke"
+      };
+      Object.entries(backgroundMap).forEach(([key, cssVariable]) => {
+        if (ASSETS[key]) document.documentElement.style.setProperty(cssVariable, `url("${ASSETS[key]}")`);
+      });
+    }
+
+    function configureMapsLink() {
+      const link = document.querySelector(".gtm-click-google-maps");
+      if (!link) return;
+      if (GOOGLE_MAPS_URL) {
+        link.href = GOOGLE_MAPS_URL;
+      } else {
+        link.addEventListener("click", (event) => event.preventDefault());
+        link.setAttribute("aria-disabled", "true");
+        link.title = "URL Google Maps belum dimasukkan";
+      }
+    }
+
+    function bindTracking() {
+      document.querySelectorAll(".gtm-click-whatsapp").forEach((link) => {
+        link.addEventListener("click", () => pushEvent("click_whatsapp", {
+          cta_location: link.dataset.ctaLocation || "unknown",
+          link_url: link.href
+        }));
+      });
+
+      document.querySelectorAll(".gtm-click-google-maps").forEach((link) => {
+        link.addEventListener("click", () => pushEvent("click_google_maps", {
+          link_url: link.href
+        }));
+      });
+
+      document.querySelectorAll(".gtm-click-view-menu").forEach((link) => {
+        link.addEventListener("click", () => pushEvent("click_view_menu", {
+          destination: "#paket"
+        }));
+      });
+
+      const menuSection = document.querySelector(".view-content-section");
+      if (menuSection && "IntersectionObserver" in window) {
+        let sent = false;
+        const observer = new IntersectionObserver((entries) => {
+          if (!sent && entries.some((entry) => entry.isIntersecting)) {
+            sent = true;
+            pushEvent("view_content", { content_name: "paket_home_service" });
+            observer.disconnect();
+          }
+        }, { threshold: .25 });
+        observer.observe(menuSection);
+      }
+    }
+
+    renderAssets();
+    configureMapsLink();
+    bindTracking();
+  </script>
+</body>
+</html>
