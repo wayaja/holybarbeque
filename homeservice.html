@@ -1,18 +1,20 @@
 <!doctype html>
 <html lang="id">
 <head>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NFCZ9X8M');</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#211b18">
   <meta name="description" content="Paket BBQ dan Steamboat Home Service HolyBarbeque Cirebon. Daging, saus homemade, dan alat masak disiapkan untuk acara di rumah.">
   <title>HolyBarbeque Home Service Cirebon | BBQ & Steamboat di Rumah</title>
+  <link rel="canonical" href="https://holybarbeque.netlify.app/homeservice">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:title" content="HolyBarbeque Home Service Cirebon | BBQ & Steamboat di Rumah">
+  <meta property="og:description" content="Paket BBQ dan Steamboat untuk acara di rumah. Bahan, saus homemade, dan alat masak sudah disiapkan.">
+  <meta property="og:url" content="https://holybarbeque.netlify.app/homeservice">
+  <meta property="og:image" content="https://i.ibb.co.com/ycyZn20m/holybbq-hs-01-hero-desktop-16x9.webp">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23211b18'/%3E%3Cpath d='M17 37h30v6H17zm4 8h4v7h-4zm18 0h4v7h-4z' fill='%23f5ead2'/%3E%3Cpath d='M25 33c-5-7 5-9 1-18 9 5 12 11 7 18 7-4 10-10 8-16 9 10 5 18-3 20H25c-7-1-10-7-6-13 1 4 3 7 6 9z' fill='%23e56f33'/%3E%3C/svg%3E">
-
-  <!--
-    GOOGLE TAG MANAGER
-    Tempel snippet GTM resmi tepat setelah tag <head> ini dan snippet noscript
-    tepat setelah tag <body>. Event dataLayer dari halaman sudah disiapkan.
-  -->
 
   <style>
     :root {
@@ -42,7 +44,6 @@
       color: var(--ink);
       background-color: var(--cream);
       background-image: var(--bg-paper);
-      background-repeat: repeat;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 16px;
       line-height: 1.6;
@@ -145,7 +146,7 @@
     .btn-dark { background: var(--ink); color: #fff9ef; }
     .btn-outline { border-color: currentColor; background: transparent; color: var(--ink); }
     .btn-whatsapp { background: var(--green); color: white; box-shadow: 0 12px 28px rgba(28,139,76,.24); }
-    .header-cta { min-height: 42px; padding: 9px 15px; font-size: .86rem; }
+    .header-cta { display: none; min-height: 42px; padding: 9px 15px; font-size: .86rem; }
     .text-link { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; color: var(--ink); font-weight: 850; text-underline-offset: 4px; }
 
     .hero {
@@ -159,8 +160,8 @@
     .hero .lead { margin-bottom: 14px; }
     .hero-actions { display: grid; gap: 10px; }
     .hero-note { display: none; margin: 8px 0 0; color: #67554c; font-size: .8rem; }
-    .trust-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 14px; }
-    .trust-chip { display: inline-flex; align-items: center; gap: 7px; padding: 8px 11px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,249,238,.74); font-size: .81rem; font-weight: 800; }
+    .trust-row { display: grid; grid-template-columns: minmax(0, 1fr) max-content; gap: 6px; margin: 12px 0 14px; }
+    .trust-chip { min-width: 0; display: inline-flex; align-items: center; justify-content: center; gap: 4px; padding: 8px 9px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,249,238,.74); font-size: clamp(.68rem, 3vw, .81rem); font-weight: 800; line-height: 1.15; white-space: nowrap; }
     .star { color: #e2a300; }
 
     .asset-placeholder {
@@ -175,8 +176,8 @@
       color: #6a574d;
       text-align: center;
     }
-    .asset-placeholder::before { content: "VISUAL PLACEHOLDER"; font-size: .72rem; font-weight: 900; letter-spacing: .13em; }
-    .asset-placeholder::after { content: attr(data-file); position: absolute; left: 12px; right: 12px; bottom: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .68rem; overflow-wrap: anywhere; }
+    .asset-placeholder::before,
+    .asset-placeholder::after { content: none; }
     .asset-placeholder.has-image { display: block; min-height: 0; border: 0; background: none; }
     .asset-placeholder.has-image::before, .asset-placeholder.has-image::after { display: none; }
     .asset-placeholder img { width: 100%; height: 100%; object-fit: cover; }
@@ -228,7 +229,6 @@
       color: #fff8ec;
       background-color: var(--ink);
       background-image: linear-gradient(rgba(33,27,24,.9), rgba(33,27,24,.96)), var(--bg-charcoal);
-      background-repeat: repeat;
     }
     .dark-section .eyebrow { color: #ff995b; }
     .dark-section .lead, .dark-section .muted { color: #d9cabc; }
@@ -240,7 +240,7 @@
     .rule-card p { margin: 0; color: #d7c8bb; font-size: .9rem; }
     .important-note { margin-top: 18px; padding: 16px 18px; border-left: 4px solid var(--orange); border-radius: 0 14px 14px 0; background: rgba(229,111,51,.12); color: #f6e5d6; }
 
-    .steamboat-section { background-color: #754735; background-image: linear-gradient(rgba(107,66,49,.78), rgba(107,66,49,.88)), var(--bg-warm); background-repeat: repeat; color: #fff9ef; }
+    .steamboat-section { background-color: #754735; background-image: linear-gradient(rgba(107,66,49,.78), rgba(107,66,49,.88)), var(--bg-warm); color: #fff9ef; }
     .steamboat-section .eyebrow { color: #ffd0ad; }
     .steamboat-section .lead { color: #f2ded1; }
     .steamboat-card { display: grid; gap: 18px; }
@@ -280,7 +280,6 @@
       overflow: hidden;
       background-color: var(--ink);
       background-image: linear-gradient(90deg, rgba(33,27,24,.95), rgba(33,27,24,.82)), var(--bg-smoke);
-      background-repeat: repeat;
       color: #fff9ef;
     }
     .final-card { display: grid; gap: 24px; align-items: center; }
@@ -310,6 +309,7 @@
     }
 
     @media (min-width: 768px) {
+      .header-cta { display: inline-flex; }
       .section { padding: 84px 0; }
       .hero { padding: 58px 0 72px; }
       .hero-note { display: block; }
@@ -341,6 +341,11 @@
       .gallery-grid .asset-placeholder { aspect-ratio: 4 / 3; align-self: start; }
     }
 
+    @media (max-width: 380px) {
+      .trust-row { gap: 4px; }
+      .trust-chip { padding: 7px 6px; font-size: .64rem; }
+    }
+
     @media (min-width: 980px) {
       .header-nav { display: flex; }
     }
@@ -352,9 +357,8 @@
   </style>
 </head>
 <body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFCZ9X8M" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="skip-link" href="#main">Lewati ke isi utama</a>
-
-  <!-- Tempel snippet GTM noscript di sini setelah container ID dikonfirmasi. -->
 
   <header class="site-header">
     <div class="container header-inner">
@@ -370,7 +374,7 @@
         <a href="#pengiriman">Pengiriman</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a class="btn btn-primary header-cta gtm-click-whatsapp" data-cta-location="header" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20mau%20tanya%20Paket%20Home%20Service." target="_blank" rel="noopener">Chat Admin</a>
+      <a class="btn btn-whatsapp header-cta gtm-click-whatsapp" data-cta-location="header" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20ingin%20mengecek%20ketersediaan%20Home%20Service.%0ATanggal%20acara%3A%20%5BTanggal%5D%0ALokasi%3A%20%5BArea%5D%0AJumlah%20orang%3A%20%5BJumlah%20Orang%5D%0AMohon%20dibantu%20rekomendasi%20paket%20dan%20jumlah%20alat." target="_blank" rel="noopener">Cek Ketersediaan via WhatsApp</a>
     </div>
   </header>
 
@@ -386,13 +390,13 @@
             <span class="trust-chip">Mulai Rp72K</span>
           </div>
           <div class="hero-actions">
-            <a class="btn btn-whatsapp gtm-click-whatsapp" data-cta-location="hero" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20mau%20cek%20ketersediaan%20Paket%20Home%20Service%20untuk%20tanggal%20%5BTanggal%5D%20di%20%5BArea%5D." target="_blank" rel="noopener">Cek Ketersediaan via WhatsApp</a>
+            <a class="btn btn-whatsapp gtm-click-whatsapp" data-cta-location="hero" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20ingin%20mengecek%20ketersediaan%20Home%20Service.%0ATanggal%20acara%3A%20%5BTanggal%5D%0ALokasi%3A%20%5BArea%5D%0AJumlah%20orang%3A%20%5BJumlah%20Orang%5D%0AMohon%20dibantu%20rekomendasi%20paket%20dan%20jumlah%20alat." target="_blank" rel="noopener">Cek Ketersediaan via WhatsApp</a>
             <a class="text-link gtm-click-view-menu" href="#paket">Lihat Paket & Harga ↓</a>
           </div>
           <p class="hero-note">Konfirmasi tanggal dan area pengiriman kepada admin sebelum melakukan pembayaran.</p>
         </div>
 
-        <div class="asset-placeholder hero-visual" data-asset-mobile="heroMobile" data-asset-desktop="heroDesktop" data-file="holybbq-hs-01-hero-mobile-4x5.webp / holybbq-hs-01-hero-desktop-16x9.webp" role="img" aria-label="Placeholder visual kegiatan BBQ HolyBarbeque Home Service di rumah"></div>
+        <div class="asset-placeholder hero-visual" data-asset-mobile="heroMobile" data-asset-desktop="heroDesktop" data-file="holybbq-hs-01-hero-mobile-4x5.webp / holybbq-hs-01-hero-desktop-16x9.webp" role="img" aria-label="Kegiatan BBQ HolyBarbeque Home Service di rumah"></div>
       </div>
     </section>
 
@@ -418,7 +422,7 @@
         <div class="section-head">
           <p class="eyebrow">Pilih paket BBQ</p>
           <h2>Paket untuk makan ramean di rumah</h2>
-          <p class="lead">Harga dan kapasitas dibuat jelas agar Anda bisa memilih paket berdasarkan jumlah orang dan kebutuhan acara.</p>
+          <p class="lead">Pilih Paket A atau Paket B sesuai jumlah orang yang akan makan dan kebutuhan acaranya.</p>
         </div>
 
         <div class="asset-placeholder package-visual" data-asset="packageMenu" data-file="holybbq-hs-12-package-menu-flatlay-3x2.webp" role="img" aria-label="Isi paket daging, sayuran, dan saus HolyBarbeque Home Service"></div>
@@ -442,7 +446,7 @@
                 <li>4 macam saus</li>
                 <li>Bumbu marinasi HolyBBQ</li>
               </ul>
-              <a class="btn btn-dark gtm-click-whatsapp" data-cta-location="package-a" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20tertarik%20Paket%20A%20Home%20Service%20untuk%20tanggal%20%5BTanggal%5D%20di%20%5BArea%5D." target="_blank" rel="noopener">Tanya Paket A</a>
+              <a class="btn btn-whatsapp gtm-click-whatsapp" data-cta-location="package-a" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20memilih%20Paket%20A%20Home%20Service.%0AJumlah%20paket%3A%20%5BJumlah%5D%0ATanggal%20acara%3A%20%5BTanggal%5D%0ALokasi%3A%20%5BArea%5D%0AMohon%20dicek%20ketersediaan%20paket%20dan%20alatnya." target="_blank" rel="noopener">Pilih Paket Ini via WhatsApp</a>
               <p class="package-note">Sudah termasuk pinjaman set alat BBQ sesuai ketentuan jumlah paket.</p>
             </div>
           </article>
@@ -465,7 +469,7 @@
                 <li>4 macam saus</li>
                 <li>Bumbu marinasi HolyBBQ</li>
               </ul>
-              <a class="btn btn-primary gtm-click-whatsapp" data-cta-location="package-b" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20tertarik%20Paket%20B%20Home%20Service%20untuk%20tanggal%20%5BTanggal%5D%20di%20%5BArea%5D." target="_blank" rel="noopener">Tanya Paket B</a>
+              <a class="btn btn-whatsapp gtm-click-whatsapp" data-cta-location="package-b" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20memilih%20Paket%20B%20Home%20Service.%0AJumlah%20paket%3A%20%5BJumlah%5D%0ATanggal%20acara%3A%20%5BTanggal%5D%0ALokasi%3A%20%5BArea%5D%0AMohon%20dicek%20ketersediaan%20paket%20dan%20alatnya." target="_blank" rel="noopener">Pilih Paket Ini via WhatsApp</a>
               <p class="package-note">Sudah termasuk pinjaman set alat BBQ sesuai ketentuan jumlah paket.</p>
             </div>
           </article>
@@ -475,7 +479,7 @@
 
     <section class="section section-tight">
       <div class="container split">
-        <div class="asset-placeholder visual-1x1" data-asset="fourSauces" data-file="holybbq-hs-03-four-sauces-1x1.webp" role="img" aria-label="Placeholder empat saus homemade HolyBarbeque"></div>
+        <div class="asset-placeholder visual-1x1" data-asset="fourSauces" data-file="holybbq-hs-03-four-sauces-1x1.webp" role="img" aria-label="Empat saus homemade HolyBarbeque"></div>
         <div>
           <p class="eyebrow">Saus homemade</p>
           <h2>Empat pilihan saus khas HolyBarbeque</h2>
@@ -496,7 +500,7 @@
           <p class="eyebrow">Peralatan BBQ</p>
           <h2>Set lengkap, jumlahnya mengikuti pesanan</h2>
           <p class="lead">Set BBQ berisi kompor, pan grill, sekitar empat pasang sendok dan sumpit, satu capitan, serta satu gunting.</p>
-          <div class="asset-placeholder visual-3x2" data-asset="bbqCompleteSet" data-file="holybbq-hs-02-bbq-complete-set-3x2.webp" role="img" aria-label="Placeholder set peralatan BBQ lengkap"></div>
+          <div class="asset-placeholder visual-3x2" data-asset="bbqCompleteSet" data-file="holybbq-hs-02-bbq-complete-set-3x2.webp" role="img" aria-label="Set peralatan BBQ lengkap"></div>
         </div>
 
         <div>
@@ -537,10 +541,10 @@
 
         <div class="steamboat-card">
           <div class="steam-visuals">
-            <div class="asset-placeholder visual-4x5" data-asset="steamboatIngredients" data-file="holybbq-hs-05-steamboat-ingredients-4x5.webp" role="img" aria-label="Placeholder bahan Holy Steamboat"></div>
+            <div class="asset-placeholder visual-4x5" data-asset="steamboatIngredients" data-file="holybbq-hs-05-steamboat-ingredients-4x5.webp" role="img" aria-label="Bahan Holy Steamboat"></div>
             <div class="steam-thumb-grid">
-              <div class="asset-placeholder visual-3x2" data-asset="steamboatCooked" data-file="holybbq-hs-06-steamboat-cooked-3x2.webp" role="img" aria-label="Placeholder Holy Steamboat matang"></div>
-              <div class="asset-placeholder visual-3x2" data-asset="steamboatEquipment" data-file="holybbq-hs-07-steamboat-equipment-3x2.webp" role="img" aria-label="Placeholder peralatan Holy Steamboat"></div>
+              <div class="asset-placeholder visual-3x2" data-asset="steamboatCooked" data-file="holybbq-hs-06-steamboat-cooked-3x2.webp" role="img" aria-label="Holy Steamboat siap disantap"></div>
+              <div class="asset-placeholder visual-3x2" data-asset="steamboatEquipment" data-file="holybbq-hs-07-steamboat-equipment-3x2.webp" role="img" aria-label="Peralatan Holy Steamboat"></div>
             </div>
           </div>
           <div class="steam-copy">
@@ -564,7 +568,7 @@
               <strong>Peralatan yang didapat:</strong>
               <p>Satu kompor, satu panci, dan satu ladle atau sendok kuah.</p>
             </div>
-            <a class="btn btn-primary gtm-click-whatsapp" data-cta-location="steamboat" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20mau%20tanya%20Holy%20Steamboat%20Home%20Service%20untuk%20tanggal%20%5BTanggal%5D%20di%20%5BArea%5D." target="_blank" rel="noopener">Tanya Holy Steamboat</a>
+            <a class="btn btn-whatsapp gtm-click-whatsapp" data-cta-location="steamboat" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20memilih%20Holy%20Steamboat%20Home%20Service.%0AJumlah%20paket%3A%20%5BJumlah%5D%0ATanggal%20acara%3A%20%5BTanggal%5D%0ALokasi%3A%20%5BArea%5D%0AMohon%20dicek%20ketersediaan%20paket%20dan%20alatnya." target="_blank" rel="noopener">Pilih Paket Ini via WhatsApp</a>
           </div>
         </div>
       </div>
@@ -588,12 +592,12 @@
 
     <section class="section section-tight">
       <div class="container split reverse">
-        <div class="asset-placeholder visual-3x2" data-asset="grillAction" data-file="holybbq-hs-04-grill-action-3x2.webp" role="img" aria-label="Placeholder aktivitas memanggang daging di rumah"></div>
+        <div class="asset-placeholder visual-3x2" data-asset="grillAction" data-file="holybbq-hs-04-grill-action-3x2.webp" role="img" aria-label="Aktivitas memanggang daging di rumah"></div>
         <div>
           <p class="eyebrow">Masak langsung saat acara</p>
-          <h2>Panggang dan santap sesuai ritme acara</h2>
-          <p class="lead">Daging sudah dimarinasi. Anda tinggal menyalakan kompor, memanggangnya di pan grill, lalu menikmati bersama keluarga atau teman.</p>
-          <a class="btn btn-dark gtm-click-whatsapp" data-cta-location="experience" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20mau%20konsultasi%20jumlah%20Paket%20Home%20Service%20yang%20sesuai%20untuk%20acara%20saya." target="_blank" rel="noopener">Konsultasikan Jumlah Paket</a>
+          <h2>Panggang sedikit demi sedikit, nikmati selagi hangat</h2>
+          <p class="lead">Daging sudah dimarinasi. Tinggal nyalakan kompor, panggang di pan grill, lalu makan bersama keluarga atau teman.</p>
+          <a class="btn btn-whatsapp gtm-click-whatsapp" data-cta-location="experience" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20ingin%20mengecek%20ketersediaan%20Home%20Service.%0ATanggal%20acara%3A%20%5BTanggal%5D%0ALokasi%3A%20%5BArea%5D%0AJumlah%20orang%3A%20%5BJumlah%20Orang%5D%0AMohon%20dibantu%20rekomendasi%20paket%20dan%20jumlah%20alat." target="_blank" rel="noopener">Cek Ketersediaan via WhatsApp</a>
         </div>
       </div>
     </section>
@@ -601,24 +605,24 @@
     <section class="section" id="dokumentasi">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Dokumentasi & kepercayaan</p>
-          <h2>Dipakai untuk acara bersama di rumah</h2>
-          <p class="lead">Dokumentasi Home Service menunjukkan penggunaan nyata. Foto outlet digunakan sebagai penguat identitas HolyBarbeque, bukan sebagai bukti layanan di rumah.</p>
+          <p class="eyebrow">Suasana BBQ bersama</p>
+          <h2>Lebih praktis untuk kumpul di rumah</h2>
+          <p class="lead">Bahan dan alat masak sudah disiapkan. Tinggal panggang, makan bersama, dan nikmati acaranya tanpa perlu menyiapkan perlengkapan BBQ sendiri.</p>
         </div>
         <div class="gallery-grid">
-          <div class="asset-placeholder visual-3x2" data-asset="homeActivity" data-file="holybbq-hs-08-home-activity-3x2.webp" role="img" aria-label="Placeholder aktivitas Home Service"></div>
-          <div class="asset-placeholder visual-4x5" data-asset="realDocumentation" data-file="holybbq-hs-09-real-documentation-4x5.webp" role="img" aria-label="Placeholder dokumentasi asli acara BBQ"></div>
-          <div class="asset-placeholder visual-3x2" data-asset="outletCrowd" data-file="holybbq-hs-10-outlet-crowd-16x9.webp" role="img" aria-label="Placeholder suasana outlet HolyBarbeque"></div>
-          <div class="asset-placeholder visual-4x3" data-asset="storefront" data-file="holybbq-hs-11-storefront-4x3.webp" role="img" aria-label="Placeholder tampak depan outlet HolyBarbeque Cirebon"></div>
+          <div class="asset-placeholder visual-3x2" data-asset="homeActivity" data-file="holybbq-hs-08-home-activity-3x2.webp" role="img" aria-label="Aktivitas HolyBarbeque Home Service"></div>
+          <div class="asset-placeholder visual-4x5" data-asset="realDocumentation" data-file="holybbq-hs-09-real-documentation-4x5.webp" role="img" aria-label="Acara BBQ bersama HolyBarbeque"></div>
+          <div class="asset-placeholder visual-3x2" data-asset="outletCrowd" data-file="holybbq-hs-10-outlet-crowd-16x9.webp" role="img" aria-label="Suasana outlet HolyBarbeque Cirebon"></div>
+          <div class="asset-placeholder visual-4x3" data-asset="storefront" data-file="holybbq-hs-11-storefront-4x3.webp" role="img" aria-label="Tampak depan outlet HolyBarbeque Cirebon"></div>
         </div>
 
         <div class="trust-panel" id="ulasan">
           <div class="asset-placeholder rating-proof" data-asset="ratingProof" data-file="holybbq-hs-13-google-rating-proof-4x1.webp" role="img" aria-label="Tangkapan layar rating 4,9 dan 2.142 Google reviews Holy Barbeque Cirebon"></div>
           <div class="rating-copy">
-            <h3>Rating Google HolyBarbeque Cirebon</h3>
-            <p>Rating 4,9 dari 2.142 Google reviews pada tangkapan layar Google Business Profile.</p>
+            <h3>Sudah dipercaya ribuan pelanggan</h3>
+            <p>Lihat rating 4,9 dan 2.142 ulasan pelanggan di Profil Google HolyBarbeque Cirebon.</p>
           </div>
-          <a class="btn btn-outline gtm-click-google-maps" href="#" data-maps-url="" target="_blank" rel="noopener">Lihat Google Maps</a>
+          <a class="btn btn-outline gtm-click-google-maps" data-cta-location="rating-proof" href="https://www.google.com/maps/search/?api=1&amp;query=Holy%20Barbeque%20Cirebon%2C%20Jl.%20DR.%20Sutomo%20No.43%2C%20Cirebon" target="_blank" rel="noopener">Lihat Profil &amp; Ulasan Google</a>
         </div>
       </div>
     </section>
@@ -627,8 +631,8 @@
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">Pengiriman & pengembalian</p>
-          <h2>Ketentuannya dijelaskan sebelum pembayaran</h2>
-          <p class="lead">Pastikan alamat, jadwal, serta metode pengembalian alat sudah dikonfirmasi kepada admin.</p>
+          <h2>Cek jarak dan cara pengembalian alat</h2>
+          <p class="lead">Admin akan memastikan alamat, jadwal antar, dan cara pengembalian alat sebelum Anda melakukan pembayaran.</p>
         </div>
         <div class="delivery-grid">
           <article class="delivery-card">
@@ -688,12 +692,12 @@
     <section class="section final-cta">
       <div class="container final-card">
         <div>
-          <p class="eyebrow">Cek tanggal sebelum kehabisan alat</p>
+          <p class="eyebrow">Cek jadwal dan ketersediaan alat</p>
           <h2>Siapkan acara BBQ di rumah bersama HolyBarbeque</h2>
           <p>Kirim tanggal acara, area, dan jumlah orang. Admin akan membantu memilih paket serta menghitung jumlah alat yang didapat.</p>
         </div>
         <div class="final-actions">
-          <a class="btn btn-whatsapp gtm-click-whatsapp" data-cta-location="final" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20mau%20cek%20ketersediaan%20Paket%20Home%20Service%20untuk%20tanggal%20%5BTanggal%5D%20di%20%5BArea%5D%20dengan%20jumlah%20%5BJumlah%20Orang%5D." target="_blank" rel="noopener">Chat Admin Sekarang</a>
+          <a class="btn btn-whatsapp gtm-click-whatsapp" data-cta-location="final" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20ingin%20mengecek%20ketersediaan%20Home%20Service.%0ATanggal%20acara%3A%20%5BTanggal%5D%0ALokasi%3A%20%5BArea%5D%0AJumlah%20orang%3A%20%5BJumlah%20Orang%5D%0AMohon%20dibantu%20rekomendasi%20paket%20dan%20jumlah%20alat." target="_blank" rel="noopener">Cek Ketersediaan via WhatsApp</a>
           <a class="btn btn-outline" style="color:#fff9ef" href="#paket">Lihat Paket Lagi</a>
         </div>
       </div>
@@ -717,15 +721,10 @@
   </footer>
 
   <div class="mobile-sticky">
-    <a class="btn btn-whatsapp gtm-click-whatsapp" data-cta-location="mobile-sticky" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20mau%20tanya%20Paket%20Home%20Service." target="_blank" rel="noopener">Chat Admin via WhatsApp</a>
+    <a class="btn btn-whatsapp gtm-click-whatsapp" data-cta-location="mobile-sticky" href="https://wa.me/6285220011315?text=Halo%20Admin%20HolyBarbeque%2C%20saya%20ingin%20mengecek%20ketersediaan%20Home%20Service.%0ATanggal%20acara%3A%20%5BTanggal%5D%0ALokasi%3A%20%5BArea%5D%0AJumlah%20orang%3A%20%5BJumlah%20Orang%5D%0AMohon%20dibantu%20rekomendasi%20paket%20dan%20jumlah%20alat." target="_blank" rel="noopener">Cek Ketersediaan via WhatsApp</a>
   </div>
 
   <script>
-    /*
-      ================================================================
-      ASSET URL CONFIGURATION — TERHUBUNG DENGAN IMGBB
-      ================================================================
-    */
     const ASSETS = Object.freeze({
       headerLogo: "https://i.ibb.co.com/WWd4wKpy/holybbq-hs-00-header-logo-transparent.webp",
       heroDesktop: "https://i.ibb.co.com/ycyZn20m/holybbq-hs-01-hero-desktop-16x9.webp",
@@ -748,8 +747,6 @@
       bgSmokeOverlay: "https://i.ibb.co.com/QjMGx09h/holybbq-hs-bg-04-smoke-overlay.webp"
     });
 
-    const GOOGLE_MAPS_URL = ""; // Tempel URL Google Maps / GBP HolyBarbeque Cirebon jika ada.
-
     const DIMENSIONS = Object.freeze({
       headerLogo: [562, 173],
       packageMenu: [1200, 800],
@@ -766,10 +763,15 @@
       ratingProof: [1200, 300]
     });
 
+    const PAGE_CONTEXT = Object.freeze({
+      page_type: "home_service",
+      page_path: "/homeservice"
+    });
+
     window.dataLayer = window.dataLayer || [];
 
     function pushEvent(eventName, detail = {}) {
-      window.dataLayer.push({ event: eventName, ...detail });
+      window.dataLayer.push({ event: eventName, ...PAGE_CONTEXT, ...detail });
     }
 
     function addImage(slot, url, alt, priority = false, dimensions = null) {
@@ -829,18 +831,6 @@
       });
     }
 
-    function configureMapsLink() {
-      const link = document.querySelector(".gtm-click-google-maps");
-      if (!link) return;
-      if (GOOGLE_MAPS_URL) {
-        link.href = GOOGLE_MAPS_URL;
-      } else {
-        link.addEventListener("click", (event) => event.preventDefault());
-        link.setAttribute("aria-disabled", "true");
-        link.title = "URL Google Maps belum dimasukkan";
-      }
-    }
-
     function bindTracking() {
       document.querySelectorAll(".gtm-click-whatsapp").forEach((link) => {
         link.addEventListener("click", () => pushEvent("click_whatsapp", {
@@ -851,6 +841,8 @@
 
       document.querySelectorAll(".gtm-click-google-maps").forEach((link) => {
         link.addEventListener("click", () => pushEvent("click_google_maps", {
+          cta_location: link.dataset.ctaLocation || "rating-proof",
+          destination_type: "google_business_profile",
           link_url: link.href
         }));
       });
@@ -876,7 +868,6 @@
     }
 
     renderAssets();
-    configureMapsLink();
     bindTracking();
   </script>
 </body>
